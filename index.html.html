@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anagha Nalawade Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#f5fbff;color:#222}
+nav{position:fixed;top:0;width:100%;z-index:1000;background:#dbeafe;padding:18px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+nav a{text-decoration:none;color:#1f4e79;font-size:20px;font-weight:600;margin:0 18px}
+section{min-height:100vh;padding:120px 8% 60px}
+#home{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#ffffff,#d8f0ff)}
+#home h1{font-size:72px;color:#1f4e79}
+#home h2{font-size:38px;color:#4a90e2;margin:15px 0}
+#home p{font-size:24px}
+.btn{display:inline-block;margin-top:25px;padding:16px 38px;background:#4da6ff;color:white;text-decoration:none;border-radius:40px;font-size:24px;font-weight:bold}
+.social-home{margin-top:25px}
+.social-home a{font-size:28px;margin:0 12px;color:#1f4e79;text-decoration:none}
+.section-title{font-size:50px;color:#1f4e79;margin-bottom:25px}
+.card{
+background:white;
+padding:30px;
+border-radius:22px;
+margin:20px 0;
+font-size:22px;
+line-height:1.8;
+box-shadow:0 14px 38px rgba(31,78,121,0.35);
+}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.skill{background:linear-gradient(135deg,#6bbcff,#4da6ff);color:white;padding:25px;font-size:26px;font-weight:bold;border-radius:20px;text-align:center}
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.project-link{display:inline-block;margin-top:12px;padding:10px 18px;background:#4da6ff;color:white;text-decoration:none;border-radius:10px}
+.contact-icons{text-align:center;font-size:38px}
+.contact-icons a{color:#1f4e79;margin:0 12px}
+footer{background:#dbeafe;text-align:center;padding:25px}
+
+@media (max-width: 768px){
+nav{padding:12px;overflow-x:auto;white-space:nowrap}
+nav a{font-size:14px;margin:0 8px}
+section{padding:90px 5% 40px;min-height:auto}
+#home h1{font-size:42px}
+#home h2{font-size:24px}
+#home p{font-size:18px}
+.section-title{font-size:34px}
+.card{font-size:18px;padding:20px}
+.project-grid{grid-template-columns:1fr}
+.contact-icons{font-size:28px}
+.btn{font-size:18px;padding:12px 24px}
+}
+
+</style>
+</head>
+<body>
+<nav style="position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.92);
+backdrop-filter:blur(10px);padding:18px 40px;display:flex;
+justify-content:space-between;align-items:center;
+box-shadow:0 4px 20px rgba(37,99,235,.08);">
+<div style="font-size:34px;font-weight:800;color:#2563eb;">AN</div>
+<div style="display:flex;gap:30px;font-weight:600;">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+<a href="#experience">Experience</a><a href="#projects">Projects</a>
+<a href="#education">Education</a><a href="#contact">Contact</a>
+</nav>
+
+
+<section id="home" style="min-height:78vh;padding:90px 8%;
+background:
+linear-gradient(rgba(248,251,255,0.82),rgba(219,234,254,0.82)),
+url("image(13).png");
+background-size:cover;
+background-position:right center;
+background-repeat:no-repeat;
+display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+
+<div style="max-width:900px">
+<h1 style="font-size:clamp(60px,8vw,110px);line-height:.95;
+font-weight:800;color:#0f2f7a;">
+Anagha <span style="color:#2563eb">Nalawade</span>
+</h1>
+
+<p style="font-size:32px;color:#163a8a;font-weight:600;margin-top:20px;">
+Data Analytics & Business Intelligence
+</p>
+
+<p style="font-size:22px;color:#475569;max-width:750px;margin:25px auto;">
+Turning data into meaningful insights through analytics, dashboards,
+visualization and storytelling.
+</p>
+
+<div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:25px 0;">
+<span style="padding:10px 18px;background:white;border-radius:30px;">Python</span>
+<span style="padding:10px 18px;background:white;border-radius:30px;">SQL</span>
+<span style="padding:10px 18px;background:white;border-radius:30px;">Power BI</span>
+<span style="padding:10px 18px;background:white;border-radius:30px;">Tableau</span>
+</div>
+
+<div style="display:flex;justify-content:center;gap:28px;margin-top:30px;">
+<a href="mailto:anaghanalawade22@gmail.com" target="_blank" style="font-size:34px;color:#2563eb;"><i class="fas fa-envelope"></i></a>
+<a href="https://github.com/AnaghaNalawade16" target="_blank" style="font-size:34px;color:#2563eb;"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/feed/" target="_blank" style="font-size:34px;color:#2563eb;"><i class="fab fa-linkedin"></i></a>
+</div>
+</div>
+</section>
+
+
+<section id="about">
+<h2 class="section-title"><i class="fa-regular fa-user"></i> About Me</h2>
+<div class="card">
+Hello! I'm <b>Anagha Nalawade</b>, a Computer Engineering student with a strong passion for Data Analytics, Data Visualization, and Business Intelligence.<br><br>
+I have hands-on experience with Python, SQL, Power BI, and Tableau, along with data analysis libraries such as Pandas, NumPy, Matplotlib, and Seaborn. Through academic projects and internship experience, I have developed skills in data cleaning, exploratory data analysis (EDA), dashboard creation, and report generation.<br><br>
+I am a quick learner who enjoys exploring new technologies and continuously improving my technical and professional skills. Along with technical expertise, I value teamwork, communication, and creativity in every project I undertake.
+</div>
+</section>
+
+
+
+<section id="skills">
+<h2 class="section-title"><i class="fas fa-code"></i> Skills</h2>
+<div class="project-grid">
+
+<div class="card" style="padding:22px">
+<div style="display:flex;align-items:center;gap:12px;color:#2563eb;font-weight:700;font-size:22px">
+<div style="width:42px;height:42px;border-radius:50%;background:#eef4ff;display:flex;align-items:center;justify-content:center"><i class="fas fa-code"></i></div>
+Programming</div><p>Python, SQL</p></div>
+
+<div class="card" style="padding:22px">
+<div style="display:flex;align-items:center;gap:12px;color:#2563eb;font-weight:700;font-size:22px">
+<div style="width:42px;height:42px;border-radius:50%;background:#eef4ff;display:flex;align-items:center;justify-content:center"><i class="fas fa-chart-column"></i></div>
+Data Visualization</div><p>Power BI, Tableau</p></div>
+
+<div class="card" style="padding:22px">
+<div style="display:flex;align-items:center;gap:12px;color:#2563eb;font-weight:700;font-size:22px">
+<div style="width:42px;height:42px;border-radius:50%;background:#eef4ff;display:flex;align-items:center;justify-content:center"><i class="fas fa-cubes"></i></div>
+Libraries</div><p>Pandas, NumPy, Matplotlib, Seaborn</p></div>
+
+<div class="card" style="padding:22px">
+<div style="display:flex;align-items:center;gap:12px;color:#2563eb;font-weight:700;font-size:22px">
+<div style="width:42px;height:42px;border-radius:50%;background:#eef4ff;display:flex;align-items:center;justify-content:center"><i class="fas fa-database"></i></div>
+Data & Databases</div><p>Data Cleaning, EDA, SQL Joins</p></div>
+
+<div class="card" style="padding:22px">
+<div style="display:flex;align-items:center;gap:12px;color:#2563eb;font-weight:700;font-size:22px">
+<div style="width:42px;height:42px;border-radius:50%;background:#eef4ff;display:flex;align-items:center;justify-content:center"><i class="fas fa-screwdriver-wrench"></i></div>
+Tools</div><p>Git, Jupyter Notebook, Figma</p></div>
+
+<div class="card" style="padding:22px">
+<div style="display:flex;align-items:center;gap:12px;color:#2563eb;font-weight:700;font-size:22px">
+<div style="width:42px;height:42px;border-radius:50%;background:#eef4ff;display:flex;align-items:center;justify-content:center"><i class="fas fa-pen-nib"></i></div>
+Design</div><p>UI Design, Illustrator Basics</p></div>
+
+<div class="card" style="padding:22px">
+<div style="display:flex;align-items:center;gap:12px;color:#2563eb;font-weight:700;font-size:22px">
+<div style="width:42px;height:42px;border-radius:50%;background:#eef4ff;display:flex;align-items:center;justify-content:center"><i class="fas fa-users"></i></div>
+Soft Skills</div><p>Communication, Teamwork, Documentation</p></div>
+
+</div>
+</section>
+
+
+
+<section id="experience">
+<h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
+<div class="card">
+<h3 style='font-size:32px'>Data Science Intern - Intelligence Infotech Pvt. Ltd., Pune</h3>
+<p style='font-size:22px'>As a Data Science Intern from January 2025 to February 2025, I worked on real-world data science and analytics projects. My responsibilities included data cleaning, preprocessing, and transforming datasets for analysis. I created interactive dashboards and reports using Power BI and Tableau, conducted Exploratory Data Analysis (EDA) to identify trends and patterns, and collaborated with team members to generate meaningful business insights. This experience enhanced my skills in data visualization, statistical analysis, problem-solving, and data-driven decision-making.
+</p>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title"><i class="fas fa-folder"></i> Projects</h2>
+<div class="project-grid">
+<div class='card' style='padding:40px'><h3 style='font-size:30px;line-height:1.2'>Olympic Data Analysis</h3><p>SQL-based analysis of Olympic datasets.</p><a class="project-link" href="https://github.com/AnaghaNalawade16" target="_blank">View Project</a></div>
+<div class='card' style='padding:40px'><h3 style='font-size:30px;line-height:1.2'>Car Dataset EDA</h3><p>Exploratory Data Analysis using Python.</p><a class="project-link" href="https://github.com/AnaghaNalawade16" target="_blank">View Project</a></div>
+<div class='card' style='padding:40px'><h3 style='font-size:30px;line-height:1.1'>E-Commerce Sales Dashboard</h3><p>Interactive Power BI dashboard.</p><a class="project-link" href="https://github.com/AnaghaNalawade16" target="_blank">View Project</a></div>
+</div>
+</section>
+
+<section id="education">
+<h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+<div class="card"><b>B.E. Computer Engineering</b><br>Marathwada Mitramandal Institute of Technology, Pune<br>CGPA: 7.4<br>Year: 2026</div>
+<div class="card"><b>Higher Secondary School</b><br>Nowrosjee Wadia College, Pune<br>80%<br>Year: 2022</div>
+<div class="card"><b>Secondary School</b><br>Mount St. Patrick Academy, Pune<br>73%<br>Year: 2020</div>
+</section>
+
+
+
+
+<section id="contact">
+<h2 class="section-title" style="margin-bottom:50px;">
+<i class="fas fa-paper-plane" style="color:#1f4e79"></i> <span style="color:#1f4e79">Contact</span>
+</h2>
+
+<div style="background:#dbeafe;padding:35px;border-radius:22px;
+display:grid;grid-template-columns:repeat(3,1fr);
+gap:20px;text-align:center;
+box-shadow:0 14px 38px rgba(31,78,121,0.25);">
+
+  <div>
+    <i class="fas fa-envelope" style="font-size:30px;color:#2563eb"></i>
+    <h3>Email</h3>
+    <p>anaghanalawade22@gmail.com</p>
+  </div>
+
+  <div>
+    <i class="fas fa-phone" style="font-size:30px;color:#2563eb"></i>
+    <h3>Phone</h3>
+    <p>+91 9322250435</p>
+  </div>
+
+  <div>
+    <i class="fas fa-location-dot" style="font-size:30px;color:#2563eb"></i>
+    <h3>Location</h3>
+    <p>Pune, India</p>
+  </div>
+
+  <div style="grid-column:1/-1;text-align:center;margin-top:10px;">
+    <a href="mailto:anaghanalawade22@gmail.com" style="font-size:34px;color:#2563eb;margin:0 18px;"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/AnaghaNalawade16" target="_blank" style="font-size:34px;color:#2563eb;margin:0 18px;"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/feed/" target="_blank" style="font-size:34px;color:#2563eb;margin:0 18px;"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+</div>
+</section>
+
+
+
+
+<footer>© 2026 Anagha Nalawade Portfolio</footer>
+</body></html>
